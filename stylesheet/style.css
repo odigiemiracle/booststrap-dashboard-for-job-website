@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.left-side{
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    top: 10%;
+}
+.left-side a{
+    text-decoration: none;
+    color: black;
+}
+.left-side li{
+    list-style: none;
+}
+.left-side li:hover{
+    background-color: rgb(227, 227, 247);
+}
+/* charts */
+.notification-charts{
+    overflow-y: scroll;
+    height: 60vh;
+}
+.chartss a{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+}
+.chartss li{
+    list-style: none;
+    padding-right: 5%s;
+}
+.chartss li:hover{
+    border: none;
+    border-bottom: 2px solid black;
+}
+/* first table */
+.icons:hover{
+    background-color: rgb(169, 169, 240);
+}
+.candidate:hover{
+    background-color: rgb(8, 8, 131);
+}
+
+/* Alerts-candidate */
+.search-bar{
+    position: absolute;
+    right: 10px;
+    top: 13px;
+}
+/* submit project */
+.checkings:hover{
+    border: 3px solid blue;
+    border: none;
+}
+.buy:active{
+    background-color: blue;
+}
+.li{
+    list-style: none;
+}
+/* mypackages */
+.mypackages li{
+    list-style: none;
+}

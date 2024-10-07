@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts-Candidate</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body>
+    <!-- Off canvas for smallscreen -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideBar" aria-labelledby="sideBarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <aside class="bg-white d-block d-md-none col-md-3 p-4 left-side">
+                <p class="text-tertiary ps-4">OVERVIEW</p>
+                <ul>
+                    <li class="fw-bold fs-5 bg-dark p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-border-all"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-message"></i>
+                            Messages
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-bookmark"></i>
+                            My Bookmarks
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-video"></i>
+                            Video meetings
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-bell"></i>
+                            Alerts Candidates
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#"><i class="fa-solid fa-money-bill-transfer"></i>
+                            Billings
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-credit-card"></i>
+                            Payouts
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-tertiary ps-4">MANAGEMENT</p>
+                <ul>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-clipboard"></i>
+                            Applicant Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-briefcase"></i>
+                            My Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Submit Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-gavel"></i>
+                            Proposal Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-ticket"></i>
+                            My Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-clock"></i>
+                            Submit Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            Bought Services
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-tertiary ps-4">USER</p>
+                <ul>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            My Profile
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-receipt"></i>
+                            Profile Setting
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            My Packages
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-lock-open"></i>
+                            Change Password
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="delete.html">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Delete Profile
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    </div>
+
+    <!-- ENd of of canvas for smallscreen -->
+    <nav class="navbar navbar-expand-lg bg-white" style="position: fixed; z-index: 10000; width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="...">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar"
+                aria-controls="sideBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-none d-md-flex align-items-center justify-content-end text-center  " style="gap: 20px;">
+                <div style="border-radius: 50%; border: 1px solid black; width: 3%;">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div style="border-radius: 50%; border: 1px solid black; width: 3%;">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                </div>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Become A Seller</a>
+                <img src="image/employer.webp" alt="..." style="width: 5%; border-radius: 50%;">
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold fs-5 text-dark" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Employer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- left side view -->
+    <main class="row">
+        <aside class="bg-white d-none d-md-block col-md-3 p-4 left-side">
+            <p class="text-tertiary ps-4">OVERVIEW</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="index.html">
+                        <i class="fa-solid fa-border-all"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="messages.html">
+                        <i class="fa-regular fa-message"></i>
+                        Messages
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-bookmark"></i>
+                        My Bookmarks
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-video"></i>
+                        Video meetings
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="AlertsCandidate.html">
+                        <i class="fa-solid fa-bell"></i>
+                        Alerts Candidates
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#"><i class="fa-solid fa-money-bill-transfer"></i>
+                        Billings
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-credit-card"></i>
+                        Payouts
+                    </a>
+                </li>
+            </ul>
+            <p class="text-tertiary ps-4">MANAGEMENT</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-clipboard"></i>
+                        Applicant Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i>
+                        My Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Submit Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="proposalproject.html">
+                        <i class="fa-solid fa-gavel"></i>
+                        Proposal Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-ticket"></i>
+                        My Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="submitproject.html">
+                        <i class="fa-regular fa-clock"></i>
+                        Submit Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        Bought Services
+                    </a>
+                </li>
+            </ul>
+            <p class="text-tertiary ps-4">USER</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-receipt"></i>
+                        Profile Setting
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="mypackages.html">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        My Packages
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="changepassword.html">
+                        <i class="fa-solid fa-lock-open"></i>
+                        Change Password
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-trash-can"></i>
+                        Delete Profile
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="col-12 col-md-9 p-4"
+            style="background-color: rgb(240, 240, 248); margin-left: auto; margin-top: 5%;">
+            <h3 class="fw-semibold mt-3">Delete Profile</h3>
+            <div class="bg-white rounded p-5 mt-5">
+                <h3 class="fw-semibold">Are you sure! You want to delete your profile.</h3>
+                <p class="fw-semibold text-secondary">This can’t be undone!</p>
+                <div class="mb-3 w-50 ">
+                    <label for="exampleInputPassword1" class="form-label">Please enter your login Password to confirm:
+                        <span class="text-danger">*</span></label>
+                    <input type="password" class="form-control p-2" id="exampleInputPassword1" placeholder="Your Password...">
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg p-2">Delete Profile</button>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

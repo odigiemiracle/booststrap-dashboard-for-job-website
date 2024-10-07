@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job-site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+
+<body>
+    <!-- Off canvas for smallscreen -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sideBar" aria-labelledby="sideBarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <aside class="bg-white d-block d-md-none col-md-3 p-4 left-side">
+                <p class="text-tertiary ps-4">OVERVIEW</p>
+                <ul>
+                    <li class="fw-bold fs-5 bg-dark p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-border-all"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-message"></i>
+                            Messages
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-bookmark"></i>
+                            My Bookmarks
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-video"></i>
+                            Video meetings
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-bell"></i>
+                            Alerts Candidates
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#"><i class="fa-solid fa-money-bill-transfer"></i>
+                            Billings
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-credit-card"></i>
+                            Payouts
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-tertiary ps-4">MANAGEMENT</p>
+                <ul>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-clipboard"></i>
+                            Applicant Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-briefcase"></i>
+                            My Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            Submit Jobs
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-gavel"></i>
+                            Proposal Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-ticket"></i>
+                            My Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-clock"></i>
+                            Submit Projects
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            Bought Services
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-tertiary ps-4">USER</p>
+                <ul>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-user"></i>
+                            My Profile
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-receipt"></i>
+                            Profile Setting
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            My Packages
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-lock-open"></i>
+                            Change Password
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-regular fa-trash-can"></i>
+                            Delete Profile
+                        </a>
+                    </li>
+                    <li class="fw-bold fs-5 p-3 rounded">
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            Log Out
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    </div>
+
+    <!-- ENd of of canvas for smallscreen -->
+    <nav class="navbar navbar-expand-lg bg-white" style="position: fixed; z-index: 10000; width: 100%;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="...">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideBar"
+                aria-controls="sideBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-none d-md-flex align-items-center justify-content-end text-center  " style="gap: 20px;">
+                <div style="border-radius: 50%; border: 1px solid black; width: 3%;">
+                    <i class="fa-solid fa-question"></i>
+                </div>
+                <div style="border-radius: 50%; border: 1px solid black; width: 3%;">
+                    <i class="fa-regular fa-bell text-lg"></i>
+                </div>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Become A Seller</a>
+                <img src="image/employer.webp" alt="..." style="width: 5%; border-radius: 50%;">
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-bold fs-5 text-dark" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Employer
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold fs-6" href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- left side view -->
+    <main class="row">
+        <aside class="bg-white d-none d-md-block col-md-3 p-4 left-side">
+            <p class="text-tertiary ps-4">OVERVIEW</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-border-all"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="messages.html">
+                        <i class="fa-regular fa-message"></i>
+                        Messages
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-bookmark"></i>
+                        My Bookmarks
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-video"></i>
+                        Video meetings
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="AlertsCandidate.html">
+                        <i class="fa-solid fa-bell"></i>
+                        Alerts Candidates
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#"><i class="fa-solid fa-money-bill-transfer"></i>
+                        Billings
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-credit-card"></i>
+                        Payouts
+                    </a>
+                </li>
+            </ul>
+            <p class="text-tertiary ps-4">MANAGEMENT</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="apllicantsjob.html">
+                        <i class="fa-regular fa-clipboard"></i>
+                        Applicant Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i>
+                        My Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-calendar-check"></i>
+                        Submit Jobs
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="proposalproject.html">
+                        <i class="fa-solid fa-gavel"></i>
+                        Proposal Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-ticket"></i>
+                        My Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="submitproject.html">
+                        <i class="fa-regular fa-clock"></i>
+                        Submit Projects
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                        Bought Services
+                    </a>
+                </li>
+            </ul>
+            <p class="text-tertiary ps-4">USER</p>
+            <ul>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-regular fa-user"></i>
+                        My Profile
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-receipt"></i>
+                        Profile Setting
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="mypackages.html">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        My Packages
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="changepassword.html">
+                        <i class="fa-solid fa-lock-open"></i>
+                        Change Password
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="delete.html">
+                        <i class="fa-regular fa-trash-can"></i>
+                        Delete Profile
+                    </a>
+                </li>
+                <li class="fw-bold fs-5 p-3 rounded">
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log Out
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="col-12 col-md-9 p-4"
+            style="background-color: rgb(240, 240, 248); margin-left: auto; margin-top: 5%;">
+            <div class="d-flex justify-content-between p-5">
+                <h3 class="fw-semibold">Applicants Jobs</h3>
+                <article class="justify-content-between">
+                    <a class="btn btn-primary btn-lg fw-semibold" href="#" role="button"><i
+                            class="fa-solid fa-download pe-2"></i>Excel Sheet</a>
+                    <a class="btn btn-primary btn-lg fw-semibold" href="#" role="button"><i
+                            class="fa-solid fa-download pe-2"></i>All CV</a>
+                </article>
+            </div>
+            <!-- first Table -->
+            <div class="table-responsive first-table bg-white p-2 rounded">
+                <article class="p-3 d-flex justify-content-between">
+                    <div class="rounded w-25"
+                        style="border: 1px solid rgb(223, 220, 220); padding: 4px; position: relative;">
+                        <input type="text" class="p-1 w-100" style="border: none;" placeholder="Search by Keyboard">
+                        <i class="fa-solid fa-magnifying-glass search-bar"></i>
+                    </div>
+                    <div class="dropdown">
+                        <button class="bg-white dropdown-toggle p-2 rounded"
+                            style="border: 1px solid rgb(223, 220, 220);" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" data-bs-boundary="viewport">
+                            sort by (default)
+                        </button>
+                        <ul class="dropdown-menu" style="overflow-y: scroll; height: 30vh;">
+                            <li><a class="dropdown-item" href="#">sort by (default)</a></li>
+                            <li><a class="dropdown-item" href="#">title (a -> z)</a></li>
+                            <li><a class="dropdown-item" href="#">title (z -> a)</a></li>
+                            <li><a class="dropdown-item" href="#">jobs (high to low)</a></li>
+                            <li><a class="dropdown-item" href="#">jobs (low to high)</a></li>
+                            <li><a class="dropdown-item" href="#">times (daily)</a></li>
+                            <li><a class="dropdown-item" href="#">times (weekly)</a></li>
+                            <li><a class="dropdown-item" href="#">times (monthly)</a></li>
+                            <li><a class="dropdown-item" href="#">status (on)</a></li>
+                            <li><a class="dropdown-item" href="#">status (off)</a></li>
+                        </ul>
+                    </div>
+                </article>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 35%;">CANDIDATES</th>
+                            <th scope="col">PROJECT TITLE</th>
+                            <th scope="col">DATE APPLIED</th>
+                            <th scope="col" style="padding-left: 2rem;">STATUS</th>
+                            <th scope="col" style="padding-left: 10rem;">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="candidate">
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-5.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Maria Sahara
+                            </th>
+                            <td class="fw-bold fs-6">Figma mockup needed...</td>
+                            <td>Mar 12, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 230, 206); color: rgb(247, 174, 40);">On Hold
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-6.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Georgina Smith
+                            </th>
+                            <td class="fw-bold fs-6">I need you to design a e</td>
+                            <td>Mar 10, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 230, 206); color: rgb(247, 174, 40);">On Hold
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-3.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Alexander Pato
+                            </th>
+                            <td class="fw-bold fs-6">Website Design ( Web &...</td>
+                            <td>Mar 06, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(227, 227, 247); color: rgb(54, 40, 247);">Interviewed
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-8.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Linda Bentrix
+                            </th>
+                            <td class="fw-bold fs-6">UX/UI Designer | Web ...</td>
+                            <td>Mar 01, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 207, 205); color: rgb(250, 49, 49);">Rejected
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-9.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Maria Sahara
+                            </th>
+                            <td class="fw-bold fs-6">Figma mockup needed </td>
+                            <td>Mar 01, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 207, 205); color: rgb(250, 49, 49);">Rejected
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-10.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Georgina Smith
+                            </th>
+                            <td class="fw-bold fs-6">I need you to design a...</td>
+                            <td>Mar 01, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 207, 205); color: rgb(250, 49, 49);">Rejected
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-11.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Alexander Pato
+                            </th>
+                            <td class="fw-bold fs-6">Website Design (Web & ...</td>
+                            <td>Mar 01, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 207, 205); color: rgb(250, 49, 49);">Rejected
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-4">
+                                <img src="image/IMG-12.webp" alt="..." style="border-radius: 50%; width: 15%;">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Kende Lili
+                            </th>
+                            <td class="fw-bold fs-6">Mobile App Developer</td>
+                            <td>Mar 01, 2024</td>
+                            <td>
+                                <div class="rounded-pill text-center fw-bold p-2"
+                                    style="background-color: rgb(243, 207, 205); color: rgb(250, 49, 49);">Rejected
+                                </div>
+                            </td>
+                            <td class="fs-5">
+                                <i class="fa-solid fa-video p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-check p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-circle-down p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-solid fa-xmark p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                                <i class="fa-regular fa-trash-can p-2 icons"
+                                    style="border: 1px solid rgb(212, 210, 210);"></i>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="btn-toolbar mt-3" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn btn-white border text-dark fw-semibold p-3">1</button>
+                        <button type="button" class="btn btn-white border text-dark fw-semibold p-3">2</button>
+                        <button type="button" class="btn btn-white border text-dark fw-semibold p-3">3</button>
+                        <button type="button" class="btn btn-white border text-dark fw-semibold p-3">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
